@@ -12,10 +12,10 @@ function App() {
       
       <main className="relative">
         <BusTrackingLanding />
-        <ProductSection/>
       </main>
 
-      <main>
+      <main className='bg-gradient-to-b from-[#1F242C] to-[#151A23] rounded-t-[80px]'>
+        <ProductSection/>
         <SoftwareService/>
       </main>
 

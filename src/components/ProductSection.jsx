@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import trackerImage from '../assets/hari.png';
 
-// FeaturePoint component with hover and animation
+// Custom hook to track screen size
+const useScreenSize = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return isMobile;
+};
+
+// FeaturePoint component for desktop view
 const FeaturePoint = ({ text, position, lineWidth, textPosition, delay }) => (
   <div
     className={`absolute ${position} flex items-center z-30 group cursor-pointer animate-slideIn`}
@@ -22,7 +38,25 @@ const FeaturePoint = ({ text, position, lineWidth, textPosition, delay }) => (
   </div>
 );
 
+// FeatureListItem component for mobile view
+const FeatureListItem = ({ text, delay }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="flex items-center justify-center p-4 border border-gray-700 rounded-lg mb-4 animate-slideIn"
+      style={{ animationDelay: delay, opacity: 0 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className={`w-3 h-3 rounded-full mr-4 ${isHovered ? 'bg-[#A7E92F]' : 'bg-white'}`} />
+      <p className={`text-lg ${isHovered ? 'text-[#A7E92F]' : 'text-white'}`}>{text}</p>
+    </div>
+  );
+};
+
 export default function ProductSection() {
+  const isMobile = useScreenSize();
   const features = [
     { text: 'easy installation', position: 'top-[15%] right-[30%] sm:top-[20%] sm:right-[55%]', lineWidth: 'w-10 sm:w-16', textPosition: 'left', delay: '0.2s' },
     { text: 'Live GPS Tracking', position: 'top-[42%] right-[35%] sm:top-[48%] sm:right-[60%]', lineWidth: 'w-8 sm:w-28', textPosition: 'left', delay: '0.4s' },
@@ -32,7 +66,7 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="bg-[#151A23] py-12 sm:py-20 relative overflow-hidden">
+    <div className="py-12 sm:py-20 relative overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-4xl font-bold text-center text-white mb-10 sm:mb-16">
           Our <span className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-transparent bg-clip-text">Product</span>
@@ -45,8 +79,8 @@ export default function ProductSection() {
               key={i}
               className="absolute bg-gradient-to-r from-[#A7E92F] to-[#32C766] rounded-full"
               style={{
-                width: `${150 + i * 70}px`,
-                height: `${150 + i * 70}px`,
+                width: isMobile ? `${80 + i * 40}px` : `${150 + i * 70}px`,
+                height: isMobile ? `${80 + i * 40}px` : `${150 + i * 70}px`,
                 animation: 'pulseGlow 4s ease-in-out infinite',
                 animationDelay: `${i * 0.2}s`,
               }}
@@ -60,13 +94,24 @@ export default function ProductSection() {
             className="relative z-20 w-[100px] sm:w-[160px] md:w-[220px] object-contain animate-float"
           />
 
-          {/* Features */}
-          <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2">
+          {/* Features for desktop */}
+          {!isMobile && (
+            <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2">
+              {features.map((feature, index) => (
+                <FeaturePoint key={index} {...feature} />
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Features for mobile */}
+        {isMobile && (
+          <div className="mt-12">
             {features.map((feature, index) => (
-              <FeaturePoint key={index} {...feature} />
+              <FeatureListItem key={index} text={feature.text} delay={feature.delay} />
             ))}
           </div>
-        </div>
+        )}
 
         {/* CTA button */}
         <div className="flex justify-center sm:justify-end mt-12 sm:mt-20">
@@ -79,7 +124,7 @@ export default function ProductSection() {
   );
 }
 
-// Keyframes
+// Keyframes (assuming this part remains the same)
 const pulseGlowKeyframes = `
   @keyframes pulseGlow {
     0%, 100% { transform: scale(1); opacity: 0.4; }
