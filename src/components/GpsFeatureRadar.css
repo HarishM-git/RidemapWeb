@@ -1,0 +1,87 @@
+.radar-container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radar-circle {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, #96e300, #6ec700);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gps-device {
+  width: 30%;
+  min-width: 100px;
+  z-index: 2;
+}
+
+.feature-label {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  width: 120px;
+}
+
+.feature-label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.feature-label.top-left {
+  top: 5%;
+  left: 10%;
+}
+.feature-label.top-right {
+  top: 5%;
+  right: 10%;
+}
+.feature-label.bottom-left {
+  bottom: 5%;
+  left: 10%;
+}
+.feature-label.bottom-right {
+  bottom: 5%;
+  right: 10%;
+}
+.feature-label.left {
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+/* Line Direction Tweaks */
+.feature-label.top-left::before,
+.feature-label.bottom-left::before,
+.feature-label.left::before {
+  right: -30px;
+}
+.feature-label.top-right::before,
+.feature-label.bottom-right::before {
+  left: -30px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .feature-label {
+    width: 100px;
+    font-size: 0.75rem;
+  }
+  .gps-device {
+    width: 40%;
+  }
+}

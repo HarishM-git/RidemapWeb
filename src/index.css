@@ -1,0 +1,32 @@
+body {
+  background-color: #151A23;
+}
+
+@import "tailwindcss";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* --- ADD THIS CODE --- */
+@layer utilities {
+  /* Animation Keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Animation Utility Classes */
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.7s ease-out forwards;
+  }
+}
