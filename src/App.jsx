@@ -5,9 +5,13 @@ import SoftwareService from './components/SoftwareService';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import ContactUs from './components/ContactUs';
+import CursorFollower from './components/CursorFollower';
+import CursorTrail from './components/CursorTrail';
 function App() {
   return (
     <div className="w-[100%] bg-[#151A23]">
+      {/* <CursorFollower/> */}
+      <CursorTrail/>
       <header className="top-5 z-50 w-full ">
         <Header />
       </header>
