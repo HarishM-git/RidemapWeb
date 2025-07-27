@@ -23,8 +23,7 @@ const Clients = () => {
   // It's called twice to create the seamless infinite loop.
   const LogoGroup = ({ isDuplicate = false }) => (
     <div
-      // This is the key: we use the .animate-marquee class you defined in index.css
-      className="flex flex-shrink-0 animate-marquee"
+      className="flex flex-shrink-0"
       // The duplicate is hidden from screen readers for accessibility
       aria-hidden={isDuplicate}
     >
@@ -52,15 +51,17 @@ const Clients = () => {
       </div>
 
       <div
-        className="relative mt-12 flex w-full overflow-x-hidden"
+        className="relative mt-12 w-full overflow-x-hidden"
         // This CSS gradient mask creates the fade-out effect on the sides
         style={{
           maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
           WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
       >
-        <LogoGroup />
-        <LogoGroup isDuplicate={true} />
+        <div className="flex animate-marquee">
+          <LogoGroup />
+          <LogoGroup isDuplicate={true} />
+        </div>
       </div>
     </div>
   );
