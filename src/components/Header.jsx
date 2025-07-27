@@ -11,9 +11,9 @@ const Header = () => {
   // Navigation links defined in an array for cleaner code
   const navLinks = [
     { href: '#', text: 'Home', active: true },
-    { href: '#', text: 'Service', active: false },
-    { href: '#', text: 'Pricing', active: false },
-    { href: '#', text: 'Contact', active: false },
+    { href: '#service', text: 'Service', active: false },
+    { href: '#pricing', text: 'Pricing', active: false },
+    { href: '#contact', text: 'Contact', active: false },
   ];
 
   return (

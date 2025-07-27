@@ -31,7 +31,7 @@ export default function BusTrackingLanding() {
           <img 
             src={logo} 
             alt="Ridemap bus tracking on phones" 
-            className="w-full h-auto max-h-[90vh] object-contain"
+            className="w-full h-auto max-h-[90vh] object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

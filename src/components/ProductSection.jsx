@@ -66,9 +66,9 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="py-12 sm:py-20 relative overflow-hidden">
+    <div className="py-12 sm:py-10 relative overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center text-white mb-10 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-10 sm:mb-16">
           Our <span className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-transparent bg-clip-text">Product</span>
         </h2>
 

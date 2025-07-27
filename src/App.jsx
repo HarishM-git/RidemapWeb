@@ -7,6 +7,8 @@ import Testimonials from './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import CursorFollower from './components/CursorFollower';
 import CursorTrail from './components/CursorTrail';
+import Footer from './components/Footer';
+import Clients from './components/Clinets';
 function App() {
   return (
     <div className="w-[100%] bg-[#151A23]">
@@ -19,13 +21,20 @@ function App() {
       <main className="relative">
         <BusTrackingLanding />
       </main>
-
       <main className='bg-gradient-to-b from-[#1F242C] to-[#151A23] rounded-t-[80px]'>
         <ProductSection/>
-        <SoftwareService/>
+        <div id='service'>
+          <SoftwareService/>
+        </div>
+        <div id='pricing'>
           <Pricing />
-          <Testimonials/>
+        </div>
+        <Clients />
+        <Testimonials/>
+        <div id='contact'>
           <ContactUs/>
+        </div>
+        <Footer/>
       </main>
 
       
