@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Import react-icons for social media icons
 import { FaFacebookF, FaWhatsapp, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
@@ -11,12 +12,12 @@ import appStoreBadge from '../assets/A1.png';
 
 const Footer = () => {
   // Data for the link columns (no changes needed here)
-  const footerLinks = {
+const footerLinks = {
     company: [
       { name: 'About Us', href: '#' },
       { name: 'Our Services', href: '#' },
-      { name: 'Terms & Condition', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms & Condition', href: '/terms' },
+      { name: 'Privacy Policy', href: '/policy' },
     ],
     getHelp: [
       { name: 'FAQ', href: '#' },
@@ -77,9 +78,9 @@ const Footer = () => {
               <ul className="mt-4 space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-gray-300 transition-colors hover:text-white">
+<Link to={link.href} className="text-gray-300 transition-colors hover:text-white">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

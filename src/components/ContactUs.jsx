@@ -19,7 +19,7 @@ const FormInput = ({ id, label, type = 'text', placeholder }) => (
 
 const ContactUs = () => {
   return (
-    <div className="bg-[var(--brand-dark)] w-full flex justify-center items-center py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[var(--brand-dark)] w-full flex justify-center items-center mt-0 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl w-full mx-auto">
         <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-transparent bg-clip-text block bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)]">

@@ -64,10 +64,12 @@ const PricingCard = ({ plan, billingCycle }) => {
               </li>
             ))}
           </ul>
-
+            <a href="#contact">
           <button className="w-full bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-black font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105">
             Contact Us <FiArrowRight />
           </button>
+
+            </a>
         </div>
       ) : (
         <div className="bg-[#151A23] border-2 border-gray-600 rounded-2xl p-6 h-full">
@@ -113,9 +115,12 @@ const PricingCard = ({ plan, billingCycle }) => {
             ))}
           </ul>
 
-          <button className="w-full bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-black font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105">
-            Contact Us <FiArrowRight />
-          </button>
+            <a href="#contact">
+                  <button className="w-full bg-gradient-to-r from-[#A7E92F] to-[#32C766] text-black font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105">
+                Contact Us <FiArrowRight />
+              </button>
+            </a>
+          
         </div>
       )}
     </div>

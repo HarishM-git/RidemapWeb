@@ -9,6 +9,7 @@ import logoMailam from '../assets/logos/mit.svg';
 import logoTakshashila from '../assets/logos/smmec.svg';
 import logoSmv from '../assets/logos/smv.svg';
 import logoManakula from '../assets/logos/taklogo.svg';
+import lucas from '../assets/logos/luca.png';
 
 const logos = [
   { src: logoAarupadai, alt: 'MEC Engineering College' },
@@ -16,6 +17,30 @@ const logos = [
   { src: logoTakshashila, alt: 'Takshashila University' },
   { src: logoSmv, alt: 'SMV School' },
   { src: logoManakula, alt: 'Manakula Vinayagar Institute of Technology' },
+    { src: lucas, alt: 'Lucas Tvs image' },
+
+
+   { src: logoAarupadai, alt: 'MEC Engineering College' },
+  { src: logoMailam, alt: 'MVIT Engineering College' },
+  { src: logoTakshashila, alt: 'Takshashila University' },
+  { src: logoSmv, alt: 'SMV School' },
+  { src: logoManakula, alt: 'Manakula Vinayagar Institute of Technology' },
+      { src: lucas, alt: 'Lucas Tvs image' },
+
+   { src: logoAarupadai, alt: 'MEC Engineering College' },
+  { src: logoMailam, alt: 'MVIT Engineering College' },
+  { src: logoTakshashila, alt: 'Takshashila University' },
+  { src: logoSmv, alt: 'SMV School' },
+  { src: logoManakula, alt: 'Manakula Vinayagar Institute of Technology' },
+      { src: lucas, alt: 'Lucas Tvs image' },
+
+   { src: logoAarupadai, alt: 'MEC Engineering College' },
+  { src: logoMailam, alt: 'MVIT Engineering College' },
+  { src: logoTakshashila, alt: 'Takshashila University' },
+  { src: logoSmv, alt: 'SMV School' },
+  { src: logoManakula, alt: 'Manakula Vinayagar Institute of Technology' },
+      { src: lucas, alt: 'Lucas Tvs image' },
+
 ];
 
 const Clients = () => {
