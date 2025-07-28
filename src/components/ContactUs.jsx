@@ -31,11 +31,12 @@ const ContactUs = () => {
           
           {/* Left Column: Image and Social Links */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="w-full h-80 bg-[var(--brand-light)] rounded-2xl flex items-center justify-center">
+            <div className="w-full h-full bg-[var(--brand-light)] rounded-2xl flex items-start">
               {/* You can replace this div with an <img> tag */}
               <img src={ima} alt="" />
+              
             </div>
-            <div className="bg-[var(--brand-light)] p-6 rounded-2xl">
+            <div className="bg-[var(--brand-light)] p-6 rounded-2xl sm:mt-[-120px] rounded-b-[0px] mt-[-100px] lg:rounded-b-2xl">
               <p className="font-semibold text-white mb-4">Follow on</p>
               <div className="flex items-center gap-4">
                 <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[var(--accent-primary)] hover:text-black">
