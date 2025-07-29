@@ -9,10 +9,11 @@ import CursorTrail from './CursorTrail';
 import Footer from './Footer';
 import Clients from './Clinets';
 import ProjectsShowcase from './ProjectsShowcase';
+import TeamSection from './TeamSection';
 function MainContent() {
   return (
     <div className="w-[100%] bg-[#151A23]">
-      {/* <CursorTrail /> */}
+      <CursorTrail />
       <header className="top-5 z-50 w-full ">
         <Header />
       </header>
@@ -35,6 +36,7 @@ function MainContent() {
         <div id="contact">
           <ContactUs />
         </div>
+          <TeamSection/>
         <Footer />
       </main>
     </div>

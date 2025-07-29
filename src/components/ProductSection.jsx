@@ -63,7 +63,7 @@ const FeatureListItem = ({ text, delay }) => (
 export default function ProductSection() {
   const isMobile = useScreenSize();
   const features = [
-    { text: 'easy installation', position: 'top-[15%] right-[55%]', lineWidth: 'w-16', textPosition: 'left', delay: '0.2s' },
+    { text: 'Easy installation', position: 'top-[15%] right-[55%]', lineWidth: 'w-28', textPosition: 'left', delay: '0.2s' },
     { text: 'Live GPS Tracking', position: 'top-[48%] right-[60%]', lineWidth: 'w-28', textPosition: 'left', delay: '0.4s' },
     { text: 'Route History Playback', position: 'bottom-[20%] right-[55%]', lineWidth: 'w-24', textPosition: 'left', delay: '0.6s' },
     { text: 'Remote Engine Lock', position: 'top-[22%] left-[58%]', lineWidth: 'w-20', textPosition: 'right', delay: '0.3s' },
@@ -71,7 +71,7 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="bg-[#1A202C] py-16 sm:py-24 relative overflow-hidden">
+    <div className="bg-[#1F242C] py-16 sm:py-24 relative overflow-hidden rounded-t-[80px]">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
 
         {/* --- Title --- */}
@@ -123,11 +123,11 @@ export default function ProductSection() {
         )}
 
         {/* --- View More Button --- */}
-        <div className="flex justify-center mt-16">
+        {/* <div className="flex justify-center mt-16">
           <a href="#" className="bg-[#A7E92F] text-black font-bold py-3 px-8 rounded-lg text-base hover:bg-opacity-80 transition-all duration-300">
             View More
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

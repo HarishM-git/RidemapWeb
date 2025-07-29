@@ -62,4 +62,9 @@ body {
   --brand-light: #1f242c;
   --accent-primary: #A7E92F;
   --accent-secondary: #32C766;
+  /* --theme-green-light: '#A7E92F';
+  --theme-green-dark: '#32C766';
+  --theme-bg: '#1A1A1A', */
 }
+/* bg-[var(--brand-light)] this is how we use this variables in new version of css
+ */

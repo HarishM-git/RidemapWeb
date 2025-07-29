@@ -19,41 +19,7 @@ const projectsData = {
     par,
     par,
   ],
-  'Parkw': [
-    par,
-    par,
-    par,
-    par,
-    par,
-  ],
-  'Park': [
-    par,
-    par,
-    par,
-    par,
-    par,
-  ],
-  'Parw': [
-    par,
-    par,
-    par,
-    par,
-    par,
-  ],
-  'Pakw': [
-    par,
-    par,
-    par,
-    par,
-    par,
-  ],
-  'Prkw': [
-    par,
-    par,
-    par,
-    par,
-    par,
-  ],
+  
 };
 
 // --- Final, corrected positions and rotations for each photo card ---
