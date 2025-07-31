@@ -21,9 +21,13 @@ const SoftwareService = () => {
                 Track Your College Bus In Real Time, Get Alerts For Arrival And Delays,
                 And Ensure Safe, Hassle-Free Commuting For Both Students And Parents.
               </p>
+              <a href="#">
+                <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
+                  Download
+                </button>
+              </a>
             </div>
             <div className="flex-shrink-0">
-              {/* Replace with your actual Students App image */}
               <img
                 src={G1}
                 alt="Students App"
@@ -36,7 +40,6 @@ const SoftwareService = () => {
           {/* Pass Checker Card */}
           <div className="bg-[#1F242C] rounded-4xl p-8 shadow-lg flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0 md:space-x-reverse md:space-x-8 transition-transform duration-300 hover:scale-105">
             <div className="flex-shrink-0">
-              {/* Replace with your actual Pass Checker image */}
               <img  
                 src={G2}  
                 alt="Pass Checker"
@@ -49,6 +52,11 @@ const SoftwareService = () => {
                 A Quick And Secure Way For College Staff To Scan And Verify Student Bus
                 passes Using A Simple Mobile Interface.
               </p>
+              <a href="#">
+                <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
+                  Download
+                </button>
+              </a>
             </div>
           </div>
 
@@ -60,9 +68,13 @@ const SoftwareService = () => {
                 A Quick And Secure Way For College Staff To Scan And Verify Student Bus
                 Passes Using A Simple Mobile Interface.
               </p>
+              <a href="#">
+                <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
+                  Visit
+                </button>
+              </a>
             </div>
             <div className="flex-shrink-0">
-              {/* Replace with your actual Admin Dashboard image */}
               <img
                 src={G3}
                 alt="Admin Dashboard"
@@ -88,6 +100,11 @@ const SoftwareService = () => {
                 Your All-In-One Platform For College Transport – With Live
                 Tracking, Pass Renewal, Route Info, And Student Support.
               </p>
+              <a href="#">
+                <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
+                  Visit
+                </button>
+              </a>
             </div>
           </div>
 
