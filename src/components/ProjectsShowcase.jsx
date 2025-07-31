@@ -19,6 +19,13 @@ const projectsData = {
     par,
     par,
   ],
+  'PrintA4': [
+    par,
+    par,
+    par,
+    par,
+    par,
+  ],
   
 };
 
@@ -44,7 +51,7 @@ const ProjectsShowcase = () => {
   const projectImages = projectsData[selectedProject] ? projectsData[selectedProject].slice(0, 5) : [];
 
   return (
-    <div className="bg-[#111827] flex flex-col items-center justify-center min-h-screen text-white p-4 sm:p-8 overflow-x-hidden">
+    <div className="bg-[#151a23] flex flex-col items-center justify-center min-h-screen text-white p-4 sm:p-8 overflow-x-hidden">
       <div className="w-full mx-auto flex flex-col items-center">
         
         {/* --- Header Text --- */}

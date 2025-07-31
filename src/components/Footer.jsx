@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import react-icons for social media icons
-import { FaFacebookF, FaWhatsapp, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import {FaWhatsapp, FaInstagram, FaLinkedinIn ,FaYoutube} from 'react-icons/fa';
 
 // --- IMPORTANT ---
 // Make sure these paths point to your actual image assets
@@ -33,7 +33,7 @@ const footerLinks = {
 
   // Reusable component for the social media links
   const SocialLink = ({ href, icon: Icon }) => (
-    <a href={href} className="text-white bg-gray-700 p-2.5 rounded-full transition-colors duration-300 hover:bg-lime-400 hover:text-gray-900">
+    <a href={href} target='_blank' className="text-white bg-gray-700 p-2.5 rounded-full transition-colors duration-300 hover:bg-lime-400 hover:text-gray-900">
       <span className="sr-only">{Icon.name.replace('Fa', '')}</span>
       <Icon className="h-5 w-5" />
     </a>
@@ -57,7 +57,7 @@ const footerLinks = {
               Download now
             </h2>
             <div className="mt-4 flex gap-4">
-              <a href="#" aria-label="Get it on Google Play">
+              <a href="https://play.google.com/store/apps/details?id=com.igniteskylabs.ridemap" aria-label="Get it on Google Play">
                 <img src={googlePlayBadge} className="h-12" alt="Google Play Store" />
               </a>
               <a href="#" aria-label="Download on the App Store">
@@ -118,9 +118,9 @@ const footerLinks = {
             <div>
               <h3 className="font-semibold text-lime-400">Contact us</h3>
               <div className="mt-4 flex space-x-3">
-                <SocialLink href="#" icon={FaFacebookF} />
+                <SocialLink href="https://www.youtube.com/@ridemapin" icon={FaYoutube} />
                 <SocialLink href="#" icon={FaWhatsapp} />
-                <SocialLink href="#" icon={FaInstagram} />
+                <SocialLink href="https://www.instagram.com/ridemap.in/" icon={FaInstagram} />
                 <SocialLink href="#" icon={FaLinkedinIn} />
               </div>
             </div>

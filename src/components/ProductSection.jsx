@@ -27,6 +27,7 @@ const FeaturePoint = ({ text, position, lineWidth, textPosition, delay }) => (
       style={{ animationDelay: delay, opacity: 0, animationFillMode: 'forwards' }}
     >
       {textPosition === 'right' && (
+        
         <>
           <div className="w-2 h-2 bg-white rounded-full flex-shrink-0 group-hover:bg-[#A7E92F] transition-colors duration-300" />
           <div className={`bg-white/60 ${lineWidth} h-[1px] group-hover:bg-[#A7E92F] transition-colors duration-300`} />
