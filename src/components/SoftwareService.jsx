@@ -21,7 +21,7 @@ const SoftwareService = () => {
                 Track Your College Bus In Real Time, Get Alerts For Arrival And Delays,
                 And Ensure Safe, Hassle-Free Commuting For Both Students And Parents.
               </p>
-              <a href="#">
+              <a target='blank' href="https://play.google.com/store/apps/details?id=com.igniteskylabs.ridemap&pcampaignid=web_share">
                 <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
                   Download
                 </button>
@@ -52,7 +52,7 @@ const SoftwareService = () => {
                 A Quick And Secure Way For College Staff To Scan And Verify Student Bus
                 passes Using A Simple Mobile Interface.
               </p>
-              <a href="#">
+              <a target='blank' href="https://play.google.com/store/apps/details?id=com.ridemap.passchecker&pcampaignid=web_share">
                 <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
                   Download
                 </button>
@@ -68,10 +68,10 @@ const SoftwareService = () => {
                 A Quick And Secure Way For College Staff To Scan And Verify Student Bus
                 Passes Using A Simple Mobile Interface.
               </p>
-              <a href="#">
+              <a href="https://admin.ridemap.in/" target='blank'>
                 <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
                   Visit
-                </button>
+                </button> 
               </a>
             </div>
             <div className="flex-shrink-0">

@@ -142,6 +142,7 @@ import hari from '../assets/H.png';
 import yuv from '../assets/yuv.jpg';
 import nivi from '../assets/nivi.jpg'; 
 import abi from '../assets/abi.png';
+import abii from '../assets/abii.png';
 // --- DATA (Expanded to better demonstrate the infinite effect) ---
 const teamMembers = [
   {
@@ -179,7 +180,7 @@ const teamMembers = [
   {
     name: 'Abi Praveen',
     title: 'Backend Developer',
-    img: abi, 
+    img: abii, 
     githubUrl: 'https://github.com/pravee42',
     linkedinUrl: 'https://www.linkedin.com/in/praveenkumar-abipravi/',
     portfolioUrl: 'https://abipravi.in/'
