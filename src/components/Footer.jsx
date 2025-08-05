@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Import react-icons for social media icons
 import {FaWhatsapp, FaInstagram, FaLinkedinIn ,FaYoutube} from 'react-icons/fa';
@@ -11,11 +11,29 @@ import googlePlayBadge from '../assets/P1.png';
 import appStoreBadge from '../assets/A1.png';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (path) => {
+    if (path.startsWith('/')) {
+      navigate(path);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (path.startsWith('#')) {
+      const targetId = path.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // For external links or other cases
+      window.location.href = path;
+    }
+  };
+
   // Data for the link columns (no changes needed here)
 const footerLinks = {
     company: [
       { name: 'About Us', href: '#' },
-      { name: 'Our Services', href: '#' },
+      { name: 'Our Services', href: '#service' },
       { name: 'Terms & Condition', href: '/terms' },
       { name: 'Privacy Policy', href: '/policy' },
     ],
@@ -78,9 +96,9 @@ const footerLinks = {
               <ul className="mt-4 space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
-<Link to={link.href} className="text-gray-300 transition-colors hover:text-white">
+<a onClick={() => handleLinkClick(link.href)} className="text-gray-300 transition-colors hover:text-white cursor-pointer">
                       {link.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -131,7 +149,7 @@ const footerLinks = {
       {/* Copyright Bar */}
       <div className="bg-lime-400 py-4">
         <p className="text-center text-sm text-gray-900 font-bold">
-          Copyright © 2022–2024 Ridemap. All Rights Reserved.
+          Copyright © 2024–2025 Ridemap. All Rights Reserved.
         </p>
       </div>
     </footer>

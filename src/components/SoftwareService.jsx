@@ -100,7 +100,8 @@ const SoftwareService = () => {
                 Your All-In-One Platform For College Transport – With Live
                 Tracking, Pass Renewal, Route Info, And Student Support.
               </p>
-              <a href="#">
+              <a href="https://ridemap365.in/" target='blank'>
+
                 <button className="bg-gradient-to-r from-[#A7E92F] to-[#32C766] hover:bg-green-400 text-black font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 text-sm mt-4">
                   Visit
                 </button>

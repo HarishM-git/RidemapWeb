@@ -52,7 +52,8 @@ const Header = () => {
 
             {/* Download Button */}
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.igniteskylabs.ridemap"
+              target='blank'
               className="bg-[#A7E92F] hover:bg-[#96d02a] text-black font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 text-base"
             >
               Downloads
