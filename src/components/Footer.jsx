@@ -51,7 +51,7 @@ const footerLinks = {
 
   // Reusable component for the social media links
   const SocialLink = ({ href, icon: Icon }) => (
-    <a href={href} target='_blank' className="text-white bg-gray-700 p-2.5 rounded-full transition-colors duration-300 hover:bg-lime-400 hover:text-gray-900">
+    <a href={href} target='_blank' className="text-white bg-gray-700 p-2.5 rounded-full transition-colors duration-300 hover:bg-lime-400 hover:text-gray-900 w-[60%]">
       <span className="sr-only">{Icon.name.replace('Fa', '')}</span>
       <Icon className="h-5 w-5" />
     </a>
@@ -135,7 +135,7 @@ const footerLinks = {
             {/* Contact Us */}
             <div>
               <h3 className="font-semibold text-lime-400">Contact us</h3>
-              <div className="mt-4 flex space-x-3">
+              <div className="mt-4 flex space-x-1 ml-[-11px] sm:ml-0">
                 <SocialLink href="https://www.youtube.com/@ridemapin" icon={FaYoutube} />
                 <SocialLink href="#" icon={FaWhatsapp} />
                 <SocialLink href="https://www.instagram.com/ridemap.in/" icon={FaInstagram} />

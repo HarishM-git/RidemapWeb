@@ -143,6 +143,7 @@ import yuv from '../assets/yuv.jpg';
 import nivi from '../assets/nivi.jpg'; 
 import abi from '../assets/abi.png';
 import abii from '../assets/abii.png';
+import Team from './Team';
 // --- DATA (Expanded to better demonstrate the infinite effect) ---
 const teamMembers = [
   {
@@ -344,12 +345,18 @@ const TeamSection = () => {
             Meet Our Team
           </span>
         </h2>
-        
         {/* --- Subtitle --- */}
         <p className="text-gray-300 max-w-2xl mx-auto mb-12 md:mb-20">
           Our talented team is dedicated to building innovative solutions and delivering exceptional results.
         </p>
+        <div className='mt-[-50px]'>
+          <div className='font-semibold text-3xl text-white'>Directives</div>
 
+        <Team></Team>
+        </div>
+        <div className='font-semibold text-3xl text-white mb-8 mt-8'>
+          Team Members
+        </div>
         {/* --- Team Carousel Container --- */}
         <div className="relative w-full h-[300px] md:h-[350px] max-w-4xl mx-auto">
           {teamMembers.map((member, index) => {
@@ -359,7 +366,7 @@ const TeamSection = () => {
             return (
               <div
                 key={index}
-                className={`cursor-pointer bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 md:p-6 flex flex-col items-center transition-all duration-300 ${isActive ? 'border-2 border-[var(--accent-primary)] shadow-[0_0_20px_-5px_var(--accent-primary)]' : 'border-2 border-transparent shadow-lg'}`}
+                className={`cursor-pointer bg-[#1F242C] backdrop-blur-sm rounded-xl p-4 md:p-6 flex flex-col items-center transition-all duration-300 ${isActive ? 'border-2 border-[var(--accent-primary)] shadow-[0_0_20px_-5px_var(--accent-primary)]' : 'border-2 border-transparent shadow-lg'}`}
                 style={style}
                 onClick={() => handleCardClick(index)}
               >

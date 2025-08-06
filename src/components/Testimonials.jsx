@@ -102,7 +102,7 @@ const Testimonials = () => {
     <div className="bg-[var(--brand-dark)] w-full py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-[-50px]">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] pt-2 pb-4">
             What Our Users Are Saying
           </h1>
