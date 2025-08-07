@@ -147,13 +147,14 @@ import Team from './Team';
 // --- DATA (Expanded to better demonstrate the infinite effect) ---
 const teamMembers = [
   {
-    name: 'Harish M',
-    title: 'Developer',
-    img: hari,
-    githubUrl: 'https://github.com/HarishM-git',
-    linkedinUrl: 'https://www.linkedin.com/in/harish-dev-edits/',
-    portfolioUrl: 'https://hari.1he.dev/'
+    name: 'Nivetha K',
+    title: 'Designer',
+    img: nivi, 
+    githubUrl: 'https://github.com/Nivethakumar19',
+    linkedinUrl: 'https://www.linkedin.com/in/nivethak-uiux/',
+    portfolioUrl: 'https://www.behance.net/nivetha_uiux'
   },
+  
   {
     name: 'Yuvaraja M',
     title: 'Developer',
@@ -163,12 +164,12 @@ const teamMembers = [
     portfolioUrl: 'https://yuv.1he.dev/'
   },
   {
-    name: 'Nivetha K',
-    title: 'Designer',
-    img: nivi, 
-    githubUrl: 'https://github.com/Nivethakumar19',
-    linkedinUrl: 'https://www.linkedin.com/in/nivethak-uiux/',
-    portfolioUrl: 'https://www.behance.net/nivetha_uiux'
+    name: 'Harish M',
+    title: 'Developer',
+    img: hari,
+    githubUrl: 'https://github.com/HarishM-git',
+    linkedinUrl: 'https://www.linkedin.com/in/harish-dev-edits/',
+    portfolioUrl: 'https://hari.1he.dev/'
   },
   {
     name: 'Sathish S',

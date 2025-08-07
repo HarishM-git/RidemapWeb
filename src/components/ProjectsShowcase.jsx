@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import cont from '../assets/cont.png'; // Adjust the import path as necessary
-import par from '../assets/ctPhoto.png'; // Adjust the import path as necessary
+import cont from '../assets/cont.png';  
+import par from '../assets/ctPhoto.png';  
+
 // --- Data for our projects ---
 // Component is fully dynamic. Add a new project object here,
 // and a new button will automatically appear.

@@ -1,40 +1,39 @@
 import React from 'react';
 import hari from '../assets/H.png';
-// You can fetch this data from an API or define it in your component
+import D1 from '../assets/Direc/D1.jpg';
+import V1 from '../assets/Direc/V1.jpg';
+import M1 from '../assets/Direc/M1.jpg';
+
+
 const teamMembers = [
   {
-    name: 'Mr. K. Manojkumar',
-    title: 'CEO',
-    description: 'Visionary Leader With A Passion For Driving Innovation',
-    // Replace with your actual image path
-    image: hari, 
+    name: 'DHANASEKARAN',
+    title: 'Chairman',
+    description: 'Honorable Chairman with a Vision for Excellence',
+    image: D1, 
+  },
+  {
+    name: 'Dr.S.Malarkkan',
+    title: 'Principal',
+    description: 'Honorable Principal with a Vision for Excellence',
+    image: M1, 
   },
   {
     name: 'Dr. R. Valli',
     title: 'CTO',
-    description: 'Visionary Leader With A Passion For Driving Innovation',
-    // Replace with your actual image path
+    description: 'Visionary CTO With A Passion For Driving Innovation',
+    image: V1, 
+  },
+  {
+    name: 'Mr. K. Manojkumar',
+    title: 'CEO',
+    description: 'Visionary CEO With A Passion For Driving Innovation',
     image: hari, 
   },
-  // {
-  //   name: 'Jane Doe',
-  //   title: 'COO',
-  //   description: 'Strategic Operator with a focus on Excellence',
-  //   // Replace with your actual image path
-  //   image: hari, 
-  // },
-  // {
-  //   name: 'John Smith',
-  //   title: 'CFO',
-  //   description: 'Financial Expert with an eye for Sustainable Growth',
-  //   // Replace with your actual image path
-  //   image: hari, 
-  // },
 ];
 
 const Team = () => {
   return (
-    // Section container with a dark background and padding
     <section className="bg-[#151a23] p-8 sm:p-12 w-[80%] mx-auto">
       <div className="container mx-auto">
         {/* Grid container for the cards */}
@@ -58,10 +57,10 @@ const Team = () => {
                 
                 {/* Info box positioned over the image */}
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 w-[90%] bg-[#1F242C] p-4 rounded-lg shadow-xl transition-transform duration-300 ease-in-out group-hover:translate-y-2">
-                  <h3 className="text-white text-lg font-bold">
+                  <h3 className="text-white text-[15px] font-bold">
                     {member.name}
                   </h3>
-                  <p className="text-gray-300 font-bold text-sm uppercase">
+                  <p className="text-gray-300 font-bold text-[12px] uppercase">
                     {member.title}
                   </p>
                   <p className="text-gray-400 text-xs mt-1">
